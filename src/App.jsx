@@ -29,8 +29,8 @@ function App() {
           </nav>
         </header>
         <main className='min-h-[80vh]'>
-          <h1 className="text-center text-[64px] font-montserrat font-bold not-italic leading-[95.19%] text-white md:hidden xl:block lg:block">Best manga reader</h1>
-          <div className='flex xl:justify-around lg:justify-evenly items-center relative md:hidden xl:flex lg:flex'>
+          <h1 className="text-center text-[64px] font-montserrat font-bold not-italic leading-[95.19%] text-white cel:hidden sm:hidden md:hidden xl:block lg:block">Best manga reader</h1>
+          <div className='flex xl:justify-around lg:justify-evenly items-center relative cel:hidden sm:hidden md:hidden xl:flex lg:flex'>
             <img className='ml-[2rem] pt-[3rem] w-full xl:max-w-[639px] lg:max-w-[550px] h-auto p-3 mt-10 ' src={animes} alt="" />
             <div className='xl:w-[482px] lg:w-[350px] relative'>
               <div className=' absolute left-0 top-0 xl:w-[472px] lg:w-[350px] h-[335px] bg-gradient-to-r from-[#4338CA] to-[#5E52F3] blur-[304px] rounded-full'>              
@@ -40,19 +40,19 @@ function App() {
                 <p className='mt-5 xl:w-[391px] lg:w-[300px] lg:text-[15px] h-[87px] flex items-center tracking-wider leading-[120%] font-normal not-italic xl:text-[16px] text-white text-left'> 
                   is an exceptional app for all manga lovers. With a wide range of titles available, from classics to 
                   the latest releases, this app is perfect for those who want to read manga anytime, anywhere.</p>
-                <input className='mt-5 text-center xl:w-[390px] xl:h-[57px] lg:w-[300px] lg:h-[45px] bg rounded-[5px] placeholder-gray-500 bg-[#9D9D9D]'  type="search" placeholder="Buscar" />
+                <input className='mt-5 text-center xl:w-[390px] xl:h-[57px] lg:w-[300px] lg:h-[45px] bg rounded-[5px] placeholder-gray-500 bg-[#9D9D9D]'  type="search" placeholder="Search manga" />
               </div>
             </div>
           </div>
 
           
-          <div className='bg-bg-image bg-cover bg-center bg-no-repeat w-screen h-screen mt-5  flex justify-center items-center'>
-            <div className='flex-none flex-col items-center w-80'>
-              <h3 className='items-center tracking-wider leading-[140%] font-semibold xl:text-[48px]  md:text-[48px] text-white text-center'>Yor favourite manga reader 😏</h3>
-              <p className='mt-5  lg:text-[15px] h-[87px] items-center tracking-wider leading-[120%] font-normal not-italic xl:text-[16px] text-white text-left'> 
+          <div className='bg-bg-image bg-cover bg-center bg-no-repeat w-screen h-screen mt-5 justify-center items-center cel:flex  md:flex sm:flex xl:hidden lg:hidden'>
+            <div className='flex-none flex-col items-center sm:w-[388px] md:w-[388px] cel:w-[300px]'>
+              <h3 className=' items-center tracking-wider leading-[140%] font-semibold md:text-[48px] sm:text-[48px] cel:text-[40px] text-white text-left'>Yor favourite manga reader 😏</h3>
+              <p className='mt-5 text-[15px] h-[87px] items-center tracking-wider leading-[120%] font-normal not-italic text-white text-left'> 
                 is an exceptional app for all manga lovers. With a wide range of titles available, from classics to 
                 the latest releases, this app is perfect for those who want to read manga anytime, anywhere.</p>
-              <input className='mt-5 text-center  xl:h-[57px]  bg rounded-[5px] placeholder-gray-500 bg-[#9D9D9D]'  type="search" placeholder="Buscar" />
+              <input className='mt-5  md:w-[388px] sm:w-[388px] cel:w-[300px] text-center  h-[45px]  bg rounded-[5px] placeholder-gray-500 bg-[#9D9D9D]'  type="search" placeholder="Search manga" />
             </div>
           </div>
 
