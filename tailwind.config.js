@@ -7,15 +7,12 @@ module.exports = {
  theme: {
  extend: {
   screens: {
-    'tablet': '640px',
-    // => @media (min-width: 640px) { ... }
-
-    'laptop': '1024px',
-    // => @media (min-width: 1024px) { ... }
-
-    'desktop': '1280px',
-    // => @media (min-width: 1280px) { ... }
+    'cel': '320px',
+    'xxl': '1440px',
   },
+  backgroundImage: {
+    'bg-image': "URL('./src/assets/images/mangasHero.png')"
+  }
  }
  },
  variants: {},

@@ -28,32 +28,42 @@ function App() {
             <img src={logo} alt="" />
           </nav>
         </header>
-        <main>
-          <h1 className="text-center text-[64px] font-montserrat font-bold not-italic leading-[95.19%] text-white">Best manga reader</h1>
-          <div className='flex justify-evenly items-center relative'>
-            <div className='w-full'>
-              <img className='ml-[5rem] pt-[3rem] w-full max-w-[639px] h-auto p-3 mt-10' src={animes} alt="" />
-
-              <div className='absolute left-[900px] top-[150px] max-w-[482px] h-[134px] w-full flex-none'>
-                <h3 className='flex items-center tracking-wider leading-[140%] font-semibold text-[48px] text-white text-left'>Yor favourite manga reader 😏</h3>
-                <p className='mt-5 w-[391px] h-[87px] flex items-center tracking-wider leading-[120%] font-normal not-italic text-[16px] text-white text-left'> 
+        <main className='min-h-[80vh]'>
+          <h1 className="text-center text-[64px] font-montserrat font-bold not-italic leading-[95.19%] text-white md:hidden xl:block lg:block">Best manga reader</h1>
+          <div className='flex xl:justify-around lg:justify-evenly items-center relative md:hidden xl:flex lg:flex'>
+            <img className='ml-[2rem] pt-[3rem] w-full xl:max-w-[639px] lg:max-w-[550px] h-auto p-3 mt-10 ' src={animes} alt="" />
+            <div className='xl:w-[482px] lg:w-[350px] relative'>
+              <div className=' absolute left-0 top-0 xl:w-[472px] lg:w-[350px] h-[335px] bg-gradient-to-r from-[#4338CA] to-[#5E52F3] blur-[304px] rounded-full'>              
+              </div>
+              <div className=' flex-none flex-col items-center'>
+                <h3 className=' flex items-center tracking-wider leading-[140%] font-semibold xl:w-[391px] xl:text-[48px] lg:w-[300px] lg:text-[35px] text-white text-left'>Yor favourite manga reader 😏</h3>
+                <p className='mt-5 xl:w-[391px] lg:w-[300px] lg:text-[15px] h-[87px] flex items-center tracking-wider leading-[120%] font-normal not-italic xl:text-[16px] text-white text-left'> 
                   is an exceptional app for all manga lovers. With a wide range of titles available, from classics to 
                   the latest releases, this app is perfect for those who want to read manga anytime, anywhere.</p>
-                  <input className='mt-5 text-center w-[482px] h-[57px] bg rounded-[5px] placeholder-gray-500 bg-[#9D9D9D]'  type="search" placeholder="Buscar" />
+                <input className='mt-5 text-center xl:w-[390px] xl:h-[57px] lg:w-[300px] lg:h-[45px] bg rounded-[5px] placeholder-gray-500 bg-[#9D9D9D]'  type="search" placeholder="Buscar" />
               </div>
-
-            </div>
-            <div className=' w-[472px] h-[335px] bg-gradient-to-r from-[#4338CA] to-[#5E52F3] blur-[304px] rounded-full'>              
             </div>
           </div>
+
+          
+          <div className='bg-bg-image bg-cover bg-center bg-no-repeat w-screen h-screen mt-5  flex justify-center items-center'>
+            <div className='flex-none flex-col items-center w-80'>
+              <h3 className='items-center tracking-wider leading-[140%] font-semibold xl:text-[48px]  md:text-[48px] text-white text-center'>Yor favourite manga reader 😏</h3>
+              <p className='mt-5  lg:text-[15px] h-[87px] items-center tracking-wider leading-[120%] font-normal not-italic xl:text-[16px] text-white text-left'> 
+                is an exceptional app for all manga lovers. With a wide range of titles available, from classics to 
+                the latest releases, this app is perfect for those who want to read manga anytime, anywhere.</p>
+              <input className='mt-5 text-center  xl:h-[57px]  bg rounded-[5px] placeholder-gray-500 bg-[#9D9D9D]'  type="search" placeholder="Buscar" />
+            </div>
+          </div>
+
         </main>
 
-        <footer className='h-[659px] bg-white'>
+        <footer className='h-[80vh] bg-white w-full'>
           <div>
-            <img className='h-[336px] rounded-b-[65%]' src={imgFooter} alt="" />
+            <img className='h-[336px] rounded-b-[65%] w-full object-cover' src={imgFooter} alt="" />
           </div>
-          <div className='flex justify-evenly items-center h-[323px]'>
-            <div className='flex w-[180px] justify-between'>
+          <div className='flex justify-evenly items-center h-[323px] flex-wrap'>
+            <div className='flex w-[180px] justify-around'>
               <p>Home</p>
               <p>Mangas</p>
             </div>
