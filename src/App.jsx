@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import apiUrl from '../api.js';
-import Navbar from './assets/components/Navbar.jsx';
-import Footer from './assets/components/Footer.jsx';
 import Index from './assets/pages/index.jsx';
+import Main from './assets/layouts/Main.jsx';
 import './App.css'
 
 
@@ -15,11 +14,13 @@ function App() {
     <>
       <div className='bg-black overflow-x-hidden min-h-screen'>
 
-        <Navbar/>
-
+      <Main>
+        
         <Index/>
 
-        <Footer/>
+      </Main>
+
+
 
       </div>
  
