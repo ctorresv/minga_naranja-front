@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import apiUrl from '../api.js';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -13,6 +14,8 @@ import corazon from './assets/images/Union.png'
 
 
 function App() {
+  console.log(apiUrl);
+  
   const [count, setCount] = useState(0)
 
   return (
