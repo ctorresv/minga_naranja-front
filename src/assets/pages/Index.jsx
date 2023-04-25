@@ -1,5 +1,6 @@
 import animes from '../images/mangasHero.png'
 import VistaCel from '../components/VistaCel'
+import Carousel from '../components/Carousel'
 
 export default function index() {
   return (
@@ -8,7 +9,7 @@ export default function index() {
 
       <h1 className="text-center text-[64px] font-montserrat font-bold not-italic leading-[95.19%] text-white cel:hidden sm:hidden md:hidden xl:block lg:block">Best manga reader</h1>
       <div className='flex xl:justify-around lg:justify-evenly items-center relative cel:hidden sm:hidden md:hidden xl:flex lg:flex'>
-        <img className='ml-[2rem] pt-[3rem] w-full xl:max-w-[639px] lg:max-w-[550px] h-auto p-3 mt-10 ' src={animes} alt="" />
+        <Carousel/>
         <div className='xl:w-[482px] lg:w-[350px] relative'>
           <div className=' absolute left-0 top-0 xl:w-[472px] lg:w-[350px] h-[335px] bg-gradient-to-r from-[#4338CA] to-[#5E52F3] blur-[304px] rounded-full'>
           </div>
