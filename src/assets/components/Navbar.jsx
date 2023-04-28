@@ -24,7 +24,7 @@ export default function Navbar() {
           <div className="w-[26.95px] border-[2px] border-white rounded-sm"></div>
         </button>
         {navOpen ?
-          <>            
+          <>
             <div className="flex flex-col items-center w-[300px] h-[750px] bg-gradient-to-r from-neutral-700 to-black order-2 absolute top-0 left-0 text-black z-50 rounded-md">
               <div className="flex justify-between ite">
                 <div className="flex p-2">

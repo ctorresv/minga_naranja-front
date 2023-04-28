@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import apiUrl from '../api.js';
-import Index from './assets/pages/index.jsx';
+import Index from './assets/pages/index.jsx'
 import Main from './assets/layouts/Main.jsx';
 import Carousel from './assets/components/Carousel.jsx';
 import './App.css'
